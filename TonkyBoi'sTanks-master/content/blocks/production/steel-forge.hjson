@@ -1,0 +1,53 @@
+{
+    localizedName: "Steel Forge"
+    type: GenericSmelter
+    health: 300
+    size: 2
+    hasPower: true
+    hasLiquids: false
+    hasItems: true
+    craftTime: 60
+    itemCapacity: 10
+    updateEffect: pulverizeSmall
+    craftEffect: smelt
+    sound: smelter
+    outputItem: {
+        item: steel,
+        amount: 1
+    }
+    consumes: {
+        power: 3,
+        items: {
+            items: [
+                {
+                    item: coal,
+                    amount: 1
+                },
+                {
+                    item: iron,
+                    amount: 3
+                }
+            ]
+        }
+    },
+    requirements: [
+        {
+            item: graphite
+            amount: 80
+        },
+        {
+            item: iron
+            amount: 100
+        },
+        {
+            item: copper
+            amount: 50
+        },
+        {
+            item: titanium
+            amount: 130
+        }
+    ],
+    category: crafting
+    research: silicon-smelter
+}

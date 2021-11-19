@@ -1,0 +1,57 @@
+localizedName: Patrol Boat
+description: A small lightly armoured long range boat armed with a terrifying gatling gun. They are much more effective in numbers. 
+type: naval
+commandLimit: 8
+health: 250
+speed: 2.75
+drag: 0.1
+accel: 0.05
+rotateSpeed: 2
+rotateShooting: false
+mineSpeed: 0
+mineTier: 0
+hitSize: 12
+armor: 3
+range: 50
+itemCapacity: 20
+destructibleWreck: true
+immunities: [
+  wet,
+  sporeSlowed,
+  burning,
+  melting
+]
+flying: false
+targetAir: true
+targetGround: true
+weapons: [
+  {
+    name: "gatling"
+    x: 0
+    y: 3
+    shootY: 4
+    recoil: 1.5
+    reload: 1
+    firstShotDelay: 0
+    ejectEffect: casing1
+    rotate: true
+    shootEffect: shootSmall
+    shootSound: gatling-fire
+    mirror: false
+    rotateSpeed: 4
+    inaccuracy: 2
+    bullet: {
+      type:BasicBulletType
+            damage: 5
+            lifetime: 30
+            speed: 8
+            pierce: false
+            hitColor: dbdb4d
+            hitEffect: pulverizeSmall
+            despawnEffect: pulverizeSmall
+            width: 2
+            length: 8
+            hittable: true
+    }
+  }
+]

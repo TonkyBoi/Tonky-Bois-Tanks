@@ -1,0 +1,17 @@
+{
+    "cost": 2.5,
+    "color": "b8b8b8",
+    "research": {
+        "parent": "iron",
+        "requirements": [
+            {
+                "item": "coal",
+                "amount": 500
+            },
+            {
+                "item": "iron",
+                "amount": 1500
+            }
+        ]
+    },
+}

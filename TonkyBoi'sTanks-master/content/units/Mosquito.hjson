@@ -1,0 +1,169 @@
+localizeName: De Havilland Mosquito
+description: A British night fighter from WW2. The RAF needed a night fighter with a long range, so British engineers made a plane out of wood for 2 reasons: They needed it to be light so it could go far and the British metal industry wasn't doing to well at the time. It was light, fast, and maneuverable and could be easily changed and modified to carry out missions effectively.
+type: flying
+commandLimit: 6
+speed: 3.5
+drag: 0.005
+accel: 0.02
+rotateSpeed: 4.5
+rotateShooting: true
+mineSpeed: 0
+mineTier: 0
+health: 620
+armor: 1
+engineSize: 0
+range: 300
+itemCapacity: 30
+hitSize: 25
+lowAltitude: true
+destructibleWreck: true
+circleTarget: true
+immunities: [
+  wet,
+  tarred
+]
+weaknesses: [
+  burning,
+  melting
+]
+flying: true
+targetAir: true
+targetGround: true
+weapons: [
+  {
+    name: "303"
+    shootCone: 10
+    x: 2
+    y: 13
+    shootY: 3
+    recoil: 1
+    ejectEffect: casing1
+    rotate: false
+    top: false
+    shootSound: mg
+    reload: 20
+    inaccuracy: 2
+    mirror: false
+    firstShotDelay: 0
+    bullet: {
+      type: BasicBulletType
+      damage: 20
+      lifetime: 40
+            pierce: false
+            hitColor: dbdb4d
+            range: 180
+      collidesAir: true
+            shootEffect: shootSmall
+            despawnEffect: pulverizeSmall
+            speed: 8
+            hitEffect: smelt
+            hittable: false
+            width: 2
+    }
+  }
+  {
+    name: "303"
+    layer: back
+    x: -2
+    y: 13
+    shootCone: 10
+    shootY: 3
+    recoil: 1
+    ejectEffect: casing1
+    rotate: false
+    top: false
+    shootSound: mg
+    reload: 20
+    inaccuracy: 2
+    mirror: false
+    firstShotDelay: 5
+    bullet: {
+      type: BasicBulletType
+      damage: 20
+      lifetime: 40
+            pierce: false
+            hitColor: dbdb4d
+            range: 180
+      collidesAir: true
+            shootEffect: shootSmall
+            despawnEffect: pulverizeSmall
+            speed: 8
+            hitEffect: smelt
+            hittable: false
+            width: 2
+    }
+  }
+  {
+    name: "303"
+    layer: back
+    x: 1
+    y: 14
+    shootCone: 10
+    shootY: 3
+    recoil: 1
+    ejectEffect: casing1
+    rotate: false
+    top: false
+    reload: 20
+    inaccuracy: 2
+    shootSound: mg
+    mirror: false
+    firstShotDelay: 10
+    bullet: {
+      type: BasicBulletType
+      damage: 20
+      lifetime: 40
+            pierce: false
+            hitColor: dbdb4d
+            range: 180
+      collidesAir: true
+            shootEffect: shootSmall
+            despawnEffect: pulverizeSmall
+            speed: 8
+            hitEffect: smelt
+            hittable: false
+            width: 2
+    }
+  }
+  {
+    name: "303"
+    layer: back
+    x: -1
+    y: 14
+    shootCone: 10
+    shootY: 3
+    recoil: 1
+    ejectEffect: casing1
+    rotate: false
+    top: false
+    reload: 20
+    inaccuracy: 2
+    shootSound: mg
+    mirror: false
+    firstShotDelay: 15
+    bullet: {
+      type: BasicBulletType
+      damage: 20
+      lifetime: 40
+            pierce: false
+            hitColor: dbdb4d
+            range: 180
+      collidesAir: true
+            shootEffect: shootSmall
+            despawnEffect: pulverizeSmall
+            speed: 8
+            hitEffect: smelt
+            hittable: false
+            width: 2
+    }
+  }
+]
+// done
+research: {
+  parent: plane-factory
+  requirements: [
+      //steel: 200
+      //aluminium: 200
+      //silicon: 2500
+]
+}

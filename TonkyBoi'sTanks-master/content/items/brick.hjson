@@ -1,0 +1,17 @@
+{
+    "cost": 2.5,
+    "color": "d00000",
+    "research": {
+        "parent": "clay",
+        "requirements": [
+            {
+                "item": "clay",
+                "amount": 1000
+            },
+            {
+                "item": "coal"
+                "amount": 500
+            }
+        ]
+    },
+}

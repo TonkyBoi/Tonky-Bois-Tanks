@@ -1,0 +1,6 @@
+name: Soft clay
+type: floor
+variants: 5
+isLiquid: false
+itemDrop: clay
+playUnmineable: true

@@ -1,0 +1,33 @@
+type: UnitFactory
+localizedName: Tank factory
+health: 500
+size: 3 
+itemCapacity: 90
+
+requirements: [
+    brick/300
+    iron/75
+    steel/25
+    silicon/50
+    aluminum/25
+]
+
+plans: [
+    {
+        unit: BT-7
+        requirements: [
+            steel/30
+            aluminum/20
+            silicon/10
+        ]
+        time: 2000
+    }
+]
+
+category: units
+
+consumes: {
+    power: 6
+}
+
+research: ground-factory

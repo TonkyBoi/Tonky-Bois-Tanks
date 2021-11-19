@@ -1,0 +1,17 @@
+type: ShallowLiquid
+localizedName: Wet Clay
+variants: 0
+itemDrop: clay
+liquidDrop: water
+isLiquid: true
+status: wet
+statusDuration: 50
+cacheLayer: water
+blendGroup: water
+playerUnmineable: true
+speedMultiplier: 0.6
+albedo: 0.7
+walkSound: splash
+walkSoundVolume: 0.06
+walkSoundPitchMin: 0.4
+walkSoundPitchMax: 0.7

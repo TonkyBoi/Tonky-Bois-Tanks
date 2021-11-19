@@ -1,0 +1,52 @@
+{
+    localizedName: "Brick kiln"
+    type: GenericSmelter
+    health: 180
+    size: 2
+    hasPower: true
+    hasLiquids: false
+    hasItems: true
+    craftTime: 60
+    itemCapacity: 10
+    updateEffect: pulverizeSmall
+    craftEffect: smelt
+    outputItem: {
+        item: brick
+        amount: 2
+    },
+    consumes: {
+        power: 0.25
+        items: {
+             items: [
+                 {
+                     item: coal,
+                     amount: 1
+                 },
+                 {
+                     item: clay,
+                     amount: 2
+                 }
+             ]
+         }
+    },
+    requirements: [
+        {
+            item: copper,
+            amount: 50
+        }, 
+        {
+            item: graphite,
+            amount: 70
+        },
+        {
+            item: lead
+            amount: 15
+        },
+        {
+            item: iron
+            amount: 20
+        }
+    ],
+    category: crafting,
+    research: graphite-press
+}

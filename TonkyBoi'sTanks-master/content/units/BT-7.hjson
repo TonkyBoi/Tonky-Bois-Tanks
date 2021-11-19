@@ -1,0 +1,107 @@
+localizedName: BT-7
+description: A fast Soviet light tank from WW2. It has the Christe suspension system, which was an american design. The patent was sold to Russian military engineers and then along came the bt7. 
+type: mech
+commandLimit: 4
+speed: 1.25
+drag: 0.03
+accel: 0.04
+rotateSpeed: 2.5
+rotateShooting: false
+mineSpeed: 0
+hitSize: 13
+mineTier: 0
+health: 340
+armor: 2
+mechFrontSway: 0.01
+range: 30
+itemCapacity: 10
+destructibleWreck: true
+drownTimeMultiplier: 6
+immunities: [
+  sapped,
+  sporeSlowed,
+  tarred
+]
+flying: false
+targetAir: false
+targetGround: true
+weapons: [
+  {
+    name: "BT-7-weapon"
+
+    x: 0
+    y: 4
+    shootY: 10
+    recoil: 0
+    reload: 140
+    ejectEffect: casing2
+    rotate: true
+    soundPitchMin: 0.75
+    soundPitchMax: 1.25
+    shootSound: cannon
+    mirror: false
+    rotateSpeed: 3
+    bullet: {
+      type: BasicBulletType
+            damage: 160
+            lifetime: 30
+            pierce: true
+	    hitColor: dbdb4d
+	    range: 30
+            width: 6
+            length: 10
+            collidesAir: false
+            shootEffect: shootBig
+            despawnEffect: pulverizeSmall
+	    status: blasted
+	    statusDuration: 1
+            speed: 8
+	    hitEffect: pulverizeSmall
+	    hittable: false
+    }
+  }
+  {
+    name: "BT-7-weapon"
+
+    x: 0
+    y: 4
+    shootY: 5
+    shootX: 2
+    recoil: 0
+    reload: 5
+    ejectEffect: casing1
+    rotate: true
+    soundPitchMin: 0.75
+    soundPitchMax: 1.25
+    shootSound: shoot
+    mirror: false
+    inaccuracy: 5
+    rotateSpeed: 3
+    bullet: {
+      type: BasicBulletType
+            damage: 10
+            lifetime: 60
+            width: 2
+            length: 5
+            pierce: false
+	    hitColor: dbdb4d
+	    range: 30
+            collidesAir: false
+            shootEffect: shootSmall
+            despawnEffect: pulverizeSmall
+	    statusDuration: 1
+            speed: 4
+	    hitEffect: pulverizeSmall
+	    hittable: false
+    }
+  }
+]
+// done
+//research: {
+  //parent: tank-factory
+  //requirements: [
+      //steel: 2000,
+      //aluminium: 1500,
+      //silicon: 500
+//]
+//}
