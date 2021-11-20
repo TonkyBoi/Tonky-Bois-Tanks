@@ -1,0 +1,54 @@
+{
+    localizedName: "Clay Mixer"
+    type: GenericCrafter
+    health: 220
+    size: 2
+    hasPower: true
+    hasLiquids: true
+    hasItems: true
+    craftTime: 80
+    itemCapacity: 20
+    liquidCapacity: 60
+    updateEffect: pulverizeRed
+    craftEffect: pulverizeMedium
+    sound: respawning
+    soundVolume: 3
+    category: crafting
+    research: brick-kiln
+    requirements: [
+        {
+            item: graphite
+            amount: 30
+        },
+        {
+            item: copper
+            amount: 80
+        },
+        {
+            item: silicon
+            amount: 15
+        },
+        {
+            item: aluminum
+            amount: 50
+        }
+    ],
+    outputItem: {
+        item: clay,
+        amount: 4
+    }
+    consumes: {
+        power: 1,
+        items: {
+            items: [
+                {
+                    item: sand,
+                    amount: 6
+                }
+            ]
+        liquid: {
+            liquid: water,
+            amount: 0.35
+        }
+    }
+}}

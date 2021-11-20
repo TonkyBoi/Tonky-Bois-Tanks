@@ -46,6 +46,10 @@
         {
             item: titanium
             amount: 130
+        },
+        {
+            item: silicon
+            amount: 60
         }
     ],
     category: crafting
